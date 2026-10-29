@@ -2,48 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>X-Plane Freeware Hangar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a2e;
-            color: #ffffff;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #e94560;
-            font-size: 3rem;
-        }
-        p {
-            color: #0f3460;
-            background: #e94560;
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .box {
-            background-color: #16213e;
-            border: 2px solid #0f3460;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 400px;
-            margin: 20px auto;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPHANGAR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🛩️ Future X-Plane Hangar</h1>
-    <p>Under Construction</p>
+    <header>
+        <h1>🛩️ X-Plane Freeware Hangar</h1>
+        <p>Your community repository for community aircraft & mods</p>
+    </header>
 
-    <div class="box">
-        <h3>Test Aircraft #1</h3>
-        <p style="background: #0f3460; color: #fff; font-size: 0.9rem;">Boeing 737-800 Freeware Mod</p>
-        <br>
-        <button onclick="alert('Download coming soon!')" style="padding: 10px 20px; background: #e94560; color: white; border: none; border-radius: 5px; cursor: pointer;">Download ZIP</button>
+    <div class="container">
+        <div class="aircraft-grid">
+
+            <div class="aircraft-card">
+                <div class="card-body">
+                    <h3 class="aircraft-title">Boeing 737-800 Enhanced</h3>
+                    <span class="meta-tag xp12">X-Plane 12</span>
+                    <span class="meta-tag">Airliner</span>
+                    <button class="download-btn" data-plane="Boeing 737-800">Download Mod</button>
+                </div>
+            </div>
+
+            <div class="aircraft-card">
+                <div class="card-body">
+                    <h3 class="aircraft-title">Cessna 172 Community Edition</h3>
+                    <span class="meta-tag">X-Plane 11 / 12</span>
+                    <span class="meta-tag">General Aviation</span>
+                    <button class="download-btn" data-plane="Cessna 172">Download Mod</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <!-- Linking your external JavaScript logic -->
+    <script src="script.js"></script>
 </body>
 </html>
