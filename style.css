@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3b82f6;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #3b82f6;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    color: #94a3b8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.aircraft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.aircraft-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.aircraft-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.aircraft-title {
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+    color: #f1f5f9;
+}
+
+.meta-tag {
+    display: inline-block;
+    background-color: #334155;
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.meta-tag.xp12 {
+    background-color: #1e3a8a;
+    color: #93c5fd;
+}
+
+.download-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #2563eb;
+}
